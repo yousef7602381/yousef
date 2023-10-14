@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cookie Clicker</title>
+    <link rel="stylesheet" href="any55.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Cookie Clicker</h1>
+        <p>Cookies: <span id="cookie">0</span></p>
+        <img id ="imgcookie" src="cookie.PNG">
+
+       
+    </div>
+    <script>
+        function addone() {
+            cookie++;
+        
+            
+            cookieDisplay.innerText = cookie;
+         }
+         cookie = 0;
+        
+        
+         cookieDisplay = document.getElementById('cookie');
+         cookieButton = document.getElementById('imgcookie');
+        
+        
+        cookieButton.addEventListener('click', () => {
+            
+            cookie++;
+        
+            
+            cookieDisplay.innerText = cookie;
+        });
+        </script>
+   
+        
+    
+</body>
+</html>
